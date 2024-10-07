@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>load & onload Example</title>
+</head>
+<body>
+    <img id="myImage" src="../Section 18/Drum Kit Starting Files/images/kick.png" alt="Image">
+    <p id="page-status">Waiting for page load...</p>
+    <script>
+        // Using load event for a specific image
+    const myImage = document.getElementById("myImage");
+    myImage.addEventListener("load", function() {
+    console.log("Image loaded!");
+    // You can perform actions here, like showing a message or applying effects.
+    });
+
+    // Using onload event for the entire page
+    window.onload = function() {
+    console.log("Page has finished loading!");
+    document.getElementById("page-status").textContent = "Page is Ready!";
+    // You can perform actions here that require the whole page to be loaded.
+    };
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>On Input</h1>
+    Enter your name: <input type="text" id="demo" oninput="uppercase()"><br><br>
+    Enter your name: <input type="text" id="demo1" oninput="lowercase()">
+    <p>When we type it covert it into uppercase</p>
+    <script>
+        function uppercase(){
+            var x=document.getElementById("demo");
+            x.value=x.value.toUpperCase();
+        }
+        function lowercase(){
+            var x=document.getElementById("demo1");
+            x.value=x.value.toLowerCase();
+        }
+    </script>
+</body>
+</html>

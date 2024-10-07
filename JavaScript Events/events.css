@@ -1,0 +1,18 @@
+h1{
+    font-size: 5rem;
+    color: aqua;
+}
+body{
+    text-align: center;
+}
+p{
+    font-size: 2rem;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
